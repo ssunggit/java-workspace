@@ -2,14 +2,14 @@ package kr.ac.kopo.day01;
 
 public class PrintMain02 {
 	/*
-	 ASCII CODE(0~256°³ Ç¥Çö°¡´É):1byte
-	 	´ë¹®ÀÚ, ¼Ò¹®ÀÚ, ¼ýÀÚ¹®ÀÚ, Æ¯¼ö¹®ÀÚ,°ø¹é¹®ÀÚ¸¦ ¼ýÀÚ·Î ÀÏ´ëÀÏ ¸ÅÄª½ÃÅ² ¼ýÀÚÇ¥	
+	 ASCII CODE(0~256ê°œ í‘œí˜„ê°€ëŠ¥):1byte
+	 	ëŒ€ë¬¸ìž, ì†Œë¬¸ìž, ìˆ«ìžë¬¸ìž, íŠ¹ìˆ˜ë¬¸ìž,ê³µë°±ë¬¸ìžë¥¼ ìˆ«ìžë¡œ ì¼ëŒ€ì¼ ë§¤ì¹­ì‹œí‚¨ ìˆ«ìží‘œ	
 	 		
 	 UNICODE(0~65500) :2byte
-	 	´Ù±¹¾î Áö¿ø ¼ýÀÚÇ¥(ASCII CODE + ÇÑ±Û, ÇÑÀÚ, ... )
-	 	ÀÚ¹ÙÀÇ ¹®ÀÚÀÎ½Ä
+	 	ë‹¤êµ­ì–´ ì§€ì› ìˆ«ìží‘œ(ASCII CODE + í•œê¸€, í•œìž, ... )
+	 	ìžë°”ì˜ ë¬¸ìžì¸ì‹
 	 	
-	 		10Áø¼ö	16Áø¼ö	
+	 		10ì§„ìˆ˜	16ì§„ìˆ˜	
 	 	'A' : 65 	0x41
 	 	'a' : 97	0x61
 	 	'0' : 48	0x30

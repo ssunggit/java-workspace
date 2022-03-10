@@ -1,5 +1,5 @@
 package kr.ac.kopo.day01;
-// ¿ÜºÎÀÇ ´Ù¸¥ ÆĞÅ°Áö, Å¬·¡½ºÀ» °¡Áö°í ¿À°í½ÍÀ» ¶§ import 
+// ì™¸ë¶€ì˜ ë‹¤ë¥¸ íŒ¨í‚¤ì§€, í´ë˜ìŠ¤ì„ ê°€ì§€ê³  ì˜¤ê³ ì‹¶ì„ ë•Œ import 
 import java.util.Scanner;
 
 public class ScannerMain {
@@ -8,24 +8,24 @@ public class ScannerMain {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		char ch =sc.nextLine().charAt(0);	
 		System.out.println("ch : "+ ch);
 		
-		System.out.print("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
-		// ´Ü¾î¸¦ ÀÔ·Â¹ŞÀ»¶§ (¶ç¾î¾²±â ¾È´ï)
+		System.out.print("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
+		// ë‹¨ì–´ë¥¼ ì…ë ¥ë°›ì„ë•Œ (ë„ì–´ì“°ê¸° ì•ˆëŒ)
 		//String str =sc.next();
-		// ¹®ÀåÀ» ÀÔ·Â¹ŞÀ»¶§
+		// ë¬¸ì¥ì„ ì…ë ¥ë°›ì„ë•Œ
 		String str2 =sc.nextLine();		
 		//System.out.println("str : " + str);
 		System.out.println("str2 : " + str2);
 		
-		System.out.print("Á¤¼ö¸¦ ÇÏ³ª ÀÔ·ÂÇÏ¼¼¿ä : ");
-		// Å°º¸µå·Î ÀÔ·Â¹ŞÀº Á¤¼ö
+		System.out.print("ì •ìˆ˜ë¥¼ í•˜ë‚˜ ì…ë ¥í•˜ì„¸ìš” : ");
+		// í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ì€ ì •ìˆ˜
 		int a = sc.nextInt();
 		System.out.println("a : " + a);
 		
-		// ÀÔ·ÂÀ» ³í¸®°ª, Á¤¼ö, ½Ç¼ö °¡´É
+		// ì…ë ¥ì„ ë…¼ë¦¬ê°’, ì •ìˆ˜, ì‹¤ìˆ˜ ê°€ëŠ¥
 	
 	}
 

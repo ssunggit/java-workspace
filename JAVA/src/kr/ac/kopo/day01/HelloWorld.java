@@ -5,10 +5,10 @@ public class HelloWorld {
 		// static public void main(String[] args){}
 		// public static void main(String args[]){}
 		// public static void main(String[] aaa){}
-		// À§ ³×°¡Áö ÇüÅÂ·Î ¾µ ¼ö ÀÖÁö¸¸ public static void main(String[] args){}
-		// ÇüÅÂ·Î ¾²ÀÚ!
+		// ìœ„ ë„¤ê°€ì§€ í˜•íƒœë¡œ ì“¸ ìˆ˜ ìˆì§€ë§Œ public static void main(String[] args){}
+		// í˜•íƒœë¡œ ì“°ì!
 		System.out.println("Hello World");
 		
 	}
-	// ÀÚµ¿¿Ï¼º: main Ä¡°í [ctrl]+[space]+[enter]
+	// ìë™ì™„ì„±: main ì¹˜ê³  [ctrl]+[space]+[enter]
 }
