@@ -19,7 +19,23 @@ package kr.ac.kopo.day03.exam;
 public class ExamMain01 {
 	
 	public static void main(String[] args) {
-	/*
+	
+		// 5 4 3 2 1 
+		// i가 루프의 횟수로 사용
+		// 조건을 변수로도 가능
+		for(int i = 1; i <= 5; i++) {
+			System.out.print(6-i);			
+		}
+		System.out.println();
+		// i를 출력문에서 사용
+		for(int i = 5; i >= 1; i--) {
+			System.out.print(i);			
+		}
+		System.out.println();
+		
+		System.out.println("--------------------------------");
+
+		/*
 		// 무한루프 for( ; ; )
 //		for(int i = 1; i <= 10 ; i++) {
 //		for(int i = 10; i >= 1 ; i--) {
@@ -45,7 +61,6 @@ public class ExamMain01 {
 			}
 			System.out.println();
 		}
-		
 		/*
 		for(int j = 1; j <= 5; j ++) {
 			System.out.print("*");
@@ -63,6 +78,7 @@ public class ExamMain01 {
 		System.out.println();
 		*/
 		
+		System.out.println();
 		
 		
 		
