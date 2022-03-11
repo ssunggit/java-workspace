@@ -6,8 +6,8 @@ package kr.ac.kopo.homework.day1;
 public class TeacherSol7 {
 	public static void main(String[] args) {
 	
-		char ch = 'b';
-		char sol= 'a';
+		char ch = 'B';
+		char sol= 0;
 		
 		if (ch >= 'A' && ch <= 'Z') {
 			sol =(char)(ch + ('a'-'A'));
