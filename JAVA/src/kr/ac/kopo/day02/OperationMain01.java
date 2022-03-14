@@ -25,6 +25,8 @@ public class OperationMain01 {
 		
 		// a++ > 0와 (b-- >= 0 && ++c > 0)를 || 연산한다.
 		System.out.println("a : "+ a +", b : " + b + " c : " + c);
+		
+	
 	}
 
 }
