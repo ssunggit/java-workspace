@@ -11,9 +11,11 @@ public class CarMain {
 		// heap영역에서는 이름을 기억하지 못하기때문에 참조변수를 만들어준다.
 		Car c = new Car();
 		c.name = "소나타";
+		c.company = "현대";
 		
 		Car c2 = new Car();
 		c2.name = "K9";
+		c2.company="기아";
 		
 		System.out.println("첫번째 자동차먕 : " + c.name);
 		System.out.println("두번째 자동차명 : " + c2.name);
