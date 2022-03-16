@@ -18,6 +18,7 @@ public class TeacherSol04 {
 			}
 		}
 		
+		
 		/*
 		//loopI: 
 		for(int i = 0; i < nums.length; i++) {

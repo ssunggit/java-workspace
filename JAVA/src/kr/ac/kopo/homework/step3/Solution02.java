@@ -15,6 +15,7 @@ import java.util.Scanner;
 9's num : 15
 10's num : 22
 < 짝수 >
+
 12 8 30 22 4 22
 짝수의 총합 : XXX
 < 홀수 >
