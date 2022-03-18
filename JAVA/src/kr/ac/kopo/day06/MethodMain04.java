@@ -19,4 +19,9 @@ public class MethodMain04 {
 		int endDan = gu.getDan();
 		
 	}
+
+
+
 }
+
+// 클래스에 정의된 멤버변수는 매개변수나 리턴타입을 거치지 않더라도 사용가능하다.
