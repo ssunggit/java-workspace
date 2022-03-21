@@ -12,8 +12,13 @@ public class Member {
 //	int		age =-1;
 //	String	bloodType"알수없음";
 	
+//	Member(){
+//		this("알수없음", -1, "알수없음");
+//	}
+	// 매개변수가 하나인 Member(String name)생성자를 호출한다.
+	// 단, 메소드를 타고 타고 들어갈 경우 속도가 느려지기 때문에 성능이 떨어진다.
 	Member(){
-		this("알수없음", -1, "알수없음");
+		this("알수없음");
 	}
 	
 	// 매개변수가 없는 경우 this가 생략 가능하다.
@@ -23,8 +28,11 @@ public class Member {
 //		bloodType = "알수없음";
 //	}
 	
+//	Member(String name){
+//		this(name, -1, "알수없음");
+//	}
 	Member(String name){
-		this(name, -1, "알수없음");
+		this(name, -1);
 	}
 //	Member(String name){
 //		this.name = name;
