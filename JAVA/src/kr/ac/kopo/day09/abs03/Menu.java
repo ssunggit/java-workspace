@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Menu {
 	private Scanner sc = new Scanner(System.in);
 		
-	public String select(){
+	private String select(){
 		System.out.print("프린터를 선택하세요(1.LG  2.SAMSUNG  3. HP) => ");
 		String type = sc.nextLine();
 		return type;
