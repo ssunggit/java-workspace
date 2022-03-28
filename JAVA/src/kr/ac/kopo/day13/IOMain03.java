@@ -17,7 +17,10 @@ public class IOMain03 {
 		try {
 			fis = new FileInputStream("iotest/Koala.jpg");
 			fos = new FileOutputStream("iotest/Koala2.jpg");
-		
+			
+			long start = System.currentTimeMillis();
+			
+			
 			// 외부장치 -> 외부장치로 저장할 수 없음
 			// 외부장치 -> RAM 으로 읽어드린 후 RAM -> 외부장치로 저장해야한다
 			// 파일의 경우 이진수로 되어있기 때문에 while문으로 파일을 다 읽는다
@@ -29,7 +32,12 @@ public class IOMain03 {
 				fos.write(c);
 			}
 			fos.flush();
+			
 
+			long end = System.currentTimeMillis();
+								// byte단위로 움직이기 때문에 시간이 오래걸린다.
+			System.out.println("소요시간 : " + (end - start) / 1000. + "초");
+			
 //		읽어드릴 때	FileNotFoundException	
 //		저장할 때 	IOException
 		// Exception 으로 묵시적 형변환
