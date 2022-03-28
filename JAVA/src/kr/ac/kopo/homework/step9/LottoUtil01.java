@@ -4,9 +4,11 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * 1. Arrays + Random
+ *
+ */
 
-
-// 배열 + for문이용
 public class LottoUtil01 {
 	public static void main(String[] args) {
 		System.out.println("로또게임");
@@ -26,17 +28,19 @@ public class LottoUtil01 {
 
 	}
 
+	
 	private int[] getNumbers() {
 		int[] arr = new int[6];
 		// 1 ~ 45 사이의 로또번호 6개 추출(중복허용하지 않는)
-		while (arr[5] == 0) {
-			Random r = new Random();
-			arr[0] = r.nextInt(45) + 1;
-			
-			for (int i = 0; i < 6; i++) {
-				int num = r.nextInt(45) + 1;
-				if (!(arr[i] == num)) {
-					arr[i] = num;
+		Random r = new Random();
+		arr[0] = r.nextInt(45) + 1;
+
+		for (int i = 1; i < 6; i++) {
+			arr[i] = r.nextInt(45) + 1;
+			for (int j  = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					arr[i] = r.nextInt(45) + 1;
+					i--;
 				}
 			}
 		}

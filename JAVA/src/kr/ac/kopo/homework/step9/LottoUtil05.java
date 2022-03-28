@@ -1,8 +1,16 @@
 package kr.ac.kopo.homework.step9;
 
+
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Random;
 import java.util.Scanner;
 
+
+/**
+ * 5. Arrays + Random + LinkedList
+ *
+ */
 
 
 public class LottoUtil05 {
@@ -24,7 +32,31 @@ public class LottoUtil05 {
 	}
 
 	private int[] getNumbers() {
-		return null;
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		Random r = new Random();
+		int num = r.nextInt(45) + 1;
+		
+		list.add(num);
+		
+		for (int i = 1; i < 6; i++) {
+			list.add(r.nextInt(45) + 1);
+			for (int j = 0; j < i; j++) {
+				if (list.get(i) == list.get(j)) {
+					list.add(r.nextInt(45) + 1);
+					i--;
+				}
+			}
+		}
+		
+		Object[] arr= list.toArray();
+		
+		int[] arr1 = new int[6];
+		for(int i = 0; i < arr.length; i++) {
+			arr1[i] = (int)arr[i];
+		}
+
+		return arr1;
+
 	}
 
 }
