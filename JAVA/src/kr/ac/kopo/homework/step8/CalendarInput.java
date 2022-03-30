@@ -9,17 +9,21 @@ public class CalendarInput {
 		int choice = sc.nextInt();
 		int year = 0;
 		int month = 0;
+		CalendarUtil c = new CalendarUtil();
+		
 		if(choice == 1) {
+			System.out.print("년도를 선택하세요 : ");
 			year = sc.nextInt();
-			Calendar1 c = new Calendar1(year);
+			c.makeCalendar(year);
 			
 		}else if(choice == 2) {
+			System.out.print("년도를 선택하세요 : ");
 			year = sc.nextInt();
+			System.out.print("월을 선택하세요 : ");
 			month = sc.nextInt();
-			Calendar1 c = new Calendar1(year, month);
-			
+			c.makeCalendar(year, month);
 		}else if(choice == 3) {
-//			반복문 종료
+			System.out.println("종료되었습니다.");
 		}
 	}
 }
