@@ -49,7 +49,22 @@ public class BookImpl implements Book {
 	}
 
 	@Override
-	public void back() {
+	public void back(UserVO loginUser) {
+		System.out.println(loginUser.getName() + "님의 대여목록");
+		if (bookList.size() > 0) {
+			for (int i = 0; i < bookList.size(); i++) {
+				if (UserImpl.loginUserID.equals(bookList.get(i).getUserId())) {
+					System.out.print("[" + (i + 1) + "]  ");
+					System.out.println(bookList.get(i).getTitle());
+					System.out.print("반납할 책의 번호를 입력해주세요.  =>");
+					int backInputNum = Integer.parseInt(sc.nextLine())-1;
+					bookList.get(backInputNum).setRental(true);
+					bookList.get(backInputNum).setUserId(null);					
+				}
+			}
+		}else {
+			System.out.println("대여목록이 없습니다.");
+		}
 
 	}
 

@@ -22,7 +22,6 @@ public class Menu {
 				userImpl.join();
 			} else if (userChoice == 2) {
 				userImpl.login();
-				
 			} else {
 				System.out.println("도서관 프로그램을 중단하겠습니다!!");
 				break;
@@ -35,7 +34,7 @@ public class Menu {
 	public void adminMenu(UserVO user) {
 		while (true) {
 			System.out.println(user.getName() + "님 이용하실 서비스의 번호를 입력해주세요.");
-			System.out.println("1. 도서리스트 출력\t 2. 도서추가\t 3. 도서정보변경 \t 4. 도서 삭제\t 5. 종료");
+			System.out.println("1. 도서리스트 출력\t 2. 도서추가\t 3. 도서정보변경 \t 4. 도서 삭제\t 5. 로그아웃");
 			System.out.print("=> ");
 			int userChoice = Integer.parseInt(sc.nextLine());
 
@@ -49,8 +48,8 @@ public class Menu {
 				book.bookUpdate();
 			} else if (userChoice == 4) {
 				book.bookDel();
-			}else {
-				System.out.println("도서관 프로그램을 중단하겠습니다!!");
+			} else {
+				System.out.println("로그아웃 되었습니다.");
 				break;
 			}
 		}
@@ -58,10 +57,9 @@ public class Menu {
 	
 	// 일반 사용자 메뉴
 	public void userMenu(UserVO loginUser) {
-		
 		while (true) {
 			System.out.println(loginUser.getName() + "님 이용하실 서비스의 번호를 입력해주세요.");
-			System.out.println("1. 전체 책 조회 \t 2. 대여\t 3. 반납\t 4. 내 도서이력 조회\t 5. 종료");
+			System.out.println("1. 전체 책 조회 \t 2. 대여\t 3. 반납\t 4. 내 도서이력 조회\t 5. 로그아웃");
 			System.out.print("=> ");
 			int userChoice = Integer.parseInt(sc.nextLine());
 
@@ -70,11 +68,11 @@ public class Menu {
 			} else if (userChoice == 2) {
 				book.rental();
 			} else if (userChoice == 3) {
-				book.back();
+				book.back(loginUser);
 			} else if (userChoice == 4) {
 				book.myRentalCheck(loginUser);
 			} else {
-				System.out.println("도서관 프로그램을 중단하겠습니다!!");
+				System.out.println("로그아웃 되었습니다.");
 				break;
 			}
 		}

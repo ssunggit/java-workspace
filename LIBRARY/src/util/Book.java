@@ -6,7 +6,7 @@ public interface Book {
 	// 사용자
 	public void rental();
 
-	public void back();
+	public void back(UserVO loginUser);
 
 	public void myRentalCheck(UserVO loginUser);
 
